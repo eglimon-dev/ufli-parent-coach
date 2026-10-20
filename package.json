@@ -1,0 +1,20 @@
+{
+  "name": "ufli-parent-coach",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Core engine for a parent-facing UFLI teacher-coach web app: placement diagnostic, Lessons 1-10 content, and a physical tool builder.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "demo": "npm run build && node dist/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  }
+}
